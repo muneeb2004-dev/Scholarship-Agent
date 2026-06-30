@@ -1,0 +1,29 @@
+[project]
+name = "scholarship-agent"
+version = "0.1.0"
+description = "AI scholarship finder Flask application"
+requires-python = ">=3.11"
+dependencies = [
+  "Flask==3.0.0",
+  "Flask-CORS==4.0.0",
+  "Flask-Caching==2.1.0",
+  "Flask-Limiter==3.5.0",
+  "Werkzeug==3.0.1",
+  "beautifulsoup4>=4.12.0",
+  "requests>=2.31.0",
+  "pandas>=2.0.0",
+  "openpyxl>=3.1.0",
+  "python-dateutil>=2.8.0",
+  "feedparser>=6.0.0",
+  "fake-useragent>=1.4.0",
+  "tqdm>=4.66.0",
+  "lxml>=4.9.0",
+  "SQLAlchemy>=2.0.0",
+  "gunicorn>=21.0.0",
+  "python-dotenv>=1.0.0",
+  "python-json-logger>=2.0.0",
+  "flask-restx>=0.5.1"
+]
+
+[tool.vercel]
+entrypoint = "flask_app:app"
